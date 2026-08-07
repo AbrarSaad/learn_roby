@@ -1,8 +1,7 @@
 def sum(list, res)
   if(list.length()==0)
-    return res  # التعديل هنا: إعادة المتغير res بدلاً من 0
+    return res
   else
-    # التعديل هنا: استخدام [1..-1] لاقتصاص الباقي من المصفوفة
     return sum(list[1,list.length()+1], res + list[0])
   end
 end
